@@ -1,38 +1,339 @@
-.App {
-  text-align: center;
+body{
+    background-color: black;
+    height: 200vh;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container{
+    font-family: 'Inter', sans-serif;
+    background-image: url('./assets/images/netflix-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: max(1500px,100vw);
+    height: 100vh;
+    /* background-size: cover; */
+}
+.navbar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    /* gap: 40px; */
+   
+
+}
+.navbar img{
+    width:190px;
+    position: relative;
+    z-index: 10;
+    margin-top: -23px;
+    
+}
+.btn{
+    /* padding: 10px; */
+    position: relative;
+    z-index: 12;
+    margin-top: -23px;
+    
+}
+.btn-nav{
+    padding: 8px;
+    margin: 10px;
+    /* outline: none; */
+    /* border: white; */
+    background-color: black;
+    color:white;
+    width: 110px;
+    margin-left:10px;
+    font-size:16px;
+    font-weight: 600;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#red-btn{
+    background-color: red;
+    color:white;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    margin-left: 17px;
+    width:88px;
+    font-size:14px;
+    font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input-btn{
+    padding: 6px 100px;
+    color: white;
+    
+}
+#input-email::placeholder{
+    font-size: 15px;
+    color:rgba(255, 255, 255, 0.692);
+    /* padding-right: 15px; */
+   
+
+}
+#input-email{
+    background-color: rgba(23, 23, 23,0.3);
+    padding-left: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.div-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:8px;
+    margin-top: 23px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#btn-btn-red{
+    background-color: red;
+    font-size: 28px;
+    padding: 6px 37px;
+    border-radius: 6px;
+    border:none;
+    color:white;
+    font-weight: 500;
+
 }
+.box{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.44;
+    top: 0;
+    background-color: black;
+    color: white;
+}
+.box-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 75vh;
+    flex-direction: column;
+    position: relative;
+    /* opacity: 1; */
+    
+
+
+}
+
+
+.box-text>:nth-child(1){
+    font-family: 'Lato', sans-serif;
+    font-size: 48px;
+    font-weight: 1000;
+    text-align: center;
+
+}
+.box-text> :nth-child(2){
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 13px;
+    text-align: center;
+
+}
+.box-text>:nth-child(3){
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 13px;
+    text-align: center;
+
+}
+
+.seperation{
+    width: auto;
+    height: 8px;
+    background-color: #232323;
+    
+}
+
+
+/* subPage  component css*/
+
+.main-container2{
+    display: flex;
+    
+    height: 80vh;
+    justify-content: center;
+    align-items:center ;
+
+}
+.text-container{
+    
+    text-align:justify;
+    margin-left: 201px;
+    color: white;
+}
+
+.text-container h1{
+    font-size: 48px;
+    font-weight: 900;
+}
+.text-container p{
+    font-size:24px;
+    font-weight: 400;
+}
+.tv-container img{
+    width:auto;
+    height: 353px;
+    margin-right: 115px;
+
+}
+.tv-container{
+    position: relative;
+}
+.tv-container video{
+    position: absolute;
+    width: auto;
+    height: 192px;
+    top: 75px;
+    right: 183px;
+    z-index: -1;
+}
+
+@media (max-width: 960px) {
+    .main-container2{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .text-container h1{
+        text-align: center;
+
+    }
+    .tv-container {
+        display: flex;
+        align-self: center;
+
+    }
+   
+}
+    
+
+
+
+/* subPage2 css */
+
+.main-container-subpage2{
+    display: flex;
+    flex-direction: row-reverse;
+    
+    height: 80vh;
+    justify-content:center;
+    align-items:center ;
+
+}
+
+.text-container-subpage2{
+    justify-content: center; 
+    align-items: center;
+    text-align:justify;
+    margin-right: 289px;
+   
+    color: white;
+}
+
+.text-container-subpage2 h1{
+    font-size: 48px;
+    font-weight: 900;
+    /* margin-right: 289px; */
+}
+.text-container-subpage2 p{
+    font-size:24px;
+    font-weight: 400;
+}
+
+.mobile-container-subpage2{
+    position: relative;
+    z-index: -1;
+
+}
+.mobile-container-subpage2 img{
+    width: auto;
+    height: 361px;
+    
+}
+
+
+.card-cont{
+    display: flex;
+    border:#5a5a5a solid;
+    border-radius: 12px;
+    width: 262px;
+    height: 99px;
+    position: absolute;
+    bottom: 25px;
+    left: 105px;
+    background-color: black;
+}
+.stranger-img img{
+    width: auto;
+    height: 80px;
+    margin: 10px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    color:white;
+    font-size: 16px;
+    
+    
+    
+}
+#strangerthings{
+    font-weight: 500;
+}
+#downloading-text{
+    font-size: 14px;
+    color:#303de8;
+    font-weight: 400;
+}
+.animation{
+    display: flex;
+    align-items: center;
+}
+.animation img{
+    width: auto;
+    height: 50px;
+    margin-left: 7px;
+}
+
+
+/* subpage3 css */
+
+
+#subpage3-vdeo{
+    width: 298px;
+    height: 238px;
+    position: absolute;
+    top: -8px;
+    left: 90px;
+}
+
+
+
+/* Subpage5 css */
+
+#text-container-subpage5{
+    
+    margin-right: 251px;
+    
+}
+
+#mobile-container-subpag5{
+    /* margin-left: 63px; */
+}
+
