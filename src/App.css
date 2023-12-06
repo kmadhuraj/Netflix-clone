@@ -226,10 +226,9 @@ body{
     .faq h1{
         font-size: 30px;
     }
-    /* .faqbox{
-        padding:20px;
-    } */
-
+    .faqbox svg{
+        width: 10px;
+    }
 }
 
 
