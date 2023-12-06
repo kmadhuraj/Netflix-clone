@@ -198,17 +198,6 @@ body{
 }
 
 
- 
-
-
-    
-
-
-
-
-
-
-
 
 
  @media  (max-width: 1020px) {
@@ -225,6 +214,18 @@ body{
         
         text-align: center;
         margin-left: 0;
+    }
+    .main-container-subpage2{
+        flex-direction: column;
+        
+        
+
+    }
+
+    .text-container-subpage2{
+        text-align: center;
+        /* margin-right: 0; */
+
     }
 
     .tv-container{
@@ -248,11 +249,9 @@ body{
 }
 
 .text-container-subpage2{
-    justify-content: center; 
-    align-items: center;
-    text-align:justify;
+    
+    /* text-align:justify; */
     margin-right: 289px;
-   
     color: white;
 }
 
@@ -345,7 +344,27 @@ body{
     
 }
 
-#mobile-container-subpag5{
-    /* margin-left: 63px; */
-}
 
+
+.faq{
+    color: white;
+    font-size: 24px;
+}
+.faq h1{
+    text-align: center;
+}
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding:30px;
+    color: white;
+    width: 40vw;
+    margin:10px auto;
+    cursor:pointer;
+    transition: all 0.3s ease-out;
+    
+}
+.faqbox:hover{
+    background-color: rgba(105, 101, 101, 0.582);
+}

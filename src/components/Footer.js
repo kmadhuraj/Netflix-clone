@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function SubPage4() {
+export default function Footer() {
   return (
     <>
     
