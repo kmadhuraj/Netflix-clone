@@ -153,24 +153,6 @@ body{
     
 }
 
-@media  (max-width: 600px) {
-    .navbar img{
-        width: 150px;
-    }
-    .btn-nav{
-        width: 70px;
-    }
-    #red-btn{
-        width: 64px;
-    }
-
-    .div-input{
-        display: flex;
-        flex-direction: column;
-    }
-
-
-}
 
 
 /* subPage  component css*/
@@ -217,6 +199,38 @@ body{
 }
 
 
+@media  (max-width: 600px) {
+  
+    .navbar img{
+        width: 150px;
+    }
+    .btn-nav{
+        width: 70px;
+    }
+    #red-btn{
+        width: 64px;
+    }
+
+    .div-input{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-container h1 {
+        font-size: 30px;
+    }
+    .text-container-subpage2 h1{
+       font-size: 30px;
+
+    }
+    .faq h1{
+        font-size: 30px;
+    }
+    /* .faqbox{
+        padding:20px;
+    } */
+
+}
 
 
  @media  (max-width: 1020px) {
@@ -279,7 +293,7 @@ body{
 }
 
 .text-container-subpage2 h1{
-    font-size: 48px;
+    /* font-size: 48px; */
     font-weight: 900;
     /* margin-right: 289px; */
 }
